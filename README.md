@@ -139,10 +139,52 @@ SOFTWARE.
 
 ---
 
-## Ringraziamenti
 
 - Cisco Meraki per l'API Dashboard
 - Ubiquiti per l'API UniFi Controller
 - TP-Link per l'API Omada SDN
 - Cloudflare per gli endpoint speed test
 - Tutti i contributor e i progetti open source utilizzati
+
+---
+
+## Ringraziamenti e Crediti
+
+### Ispirazione e codice
+
+- **Cisco Meraki** — Documentazione API Dashboard v1
+- **Ubiquiti UniFi** — Documentazione API Controller
+- **TP-Link Omada** — Documentazione API SDN Controller (locale e cloud)
+- **Cloudflare** — Endpoint speed test (speed.cloudflare.com/__down, __up)
+- **Google Android Architecture Samples** — Pattern MVVM, Repository, Flow
+- **Android Open Source Project** — Linee guida e best practice per app Android
+- **IEEE** — Database OUI (Organizationally Unique Identifier) per vendor MAC
+- **JetBrains** — Kotlin, Kotlinx Serialization, Coroutines
+- **Square** — OkHttp (HTTP client utilizzato per tutte le API)
+
+### Librerie open source utilizzate
+
+| Componente | Licenza | Progetto originale |
+|-----------|---------|-------------------|
+| OkHttp | Apache 2.0 | https://github.com/square/okhttp |
+| SNMP4J | Apache 2.0 | https://www.snmp4j.org/ |
+| JmDNS | Apache 2.0 | https://github.com/jmdns/jmdns |
+| Hilt | Apache 2.0 | https://dagger.dev/hilt/ |
+| Kotlinx Serialization | Apache 2.0 | https://github.com/Kotlin/kotlinx.serialization |
+| Kotlinx Coroutines | Apache 2.0 | https://github.com/Kotlin/kotlinx.coroutines |
+| AndroidX Security | Apache 2.0 | https://developer.android.com/jetpack/androidx/releases/security |
+| Jetpack Compose | Apache 2.0 | https://developer.android.com/jetpack/compose |
+| Material 3 | Apache 2.0 | https://m3.material.io/ |
+
+### Codice adattato
+
+- **Speed test**: implementazione basata sul protocollo di speed.cloudflare.com e ispirata a progetti open source come LibreSpeed (https://librespeed.org/)
+- **Heatmap interpolation**: algoritmo Inverse Distance Weighting, standard in ambito geostatistico, implementato seguendo la letteratura scientifica
+- **Wi-Fi scanning patterns**: tratti dalle Android documentation samples e adattati per l'uso con Jetpack Compose
+- **SNMP scanner**: basato su SNMP4J con query standard MIB-II (sysDescr, sysName, sysObjectID, sysLocation, sysContact, sysUpTime)
+
+### Strumenti
+
+- **Pi coding agent harness** — Ambiente di sviluppo assistito
+- **Android Studio** — IDE di sviluppo
+- **Gradle** — Sistema di build
