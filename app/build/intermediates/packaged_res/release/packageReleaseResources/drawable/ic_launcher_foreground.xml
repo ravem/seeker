@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icona Seeker: rete/nodi generica -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Cerchio sfondo -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.15"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0" />
+
+    <!-- Nodo centrale -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+
+    <!-- Nodo superiore -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,30m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+
+    <!-- Nodo superiore-destro -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M76,40m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+
+    <!-- Nodo inferiore-sinistro -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,72m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+
+    <!-- Nodo inferiore-destro -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M78,74m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+
+    <!-- Linee di connessione -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:pathData="M36,30L54,46" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:pathData="M76,40L62,46" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:pathData="M30,72L46,62" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:pathData="M78,74L62,62" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M54,62L54,72" />
+
+</vector>
