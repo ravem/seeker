@@ -32,6 +32,7 @@ import com.seeker.app.ui.settings.SettingsScreen
 import com.seeker.app.ui.about.AboutScreen
 import com.seeker.app.ui.integrations.IntegrationsScreen
 import com.seeker.app.ui.controller.ControllerDashboardScreen
+import com.seeker.app.ui.heatmap.HeatmapScreen
 
 /**
  * Navigazione principale dell'app con bottom navigation bar.
@@ -121,7 +122,8 @@ fun AppNavigation() {
             }
             composable(route = Tab.WifiScanner.route) {
                 WifiScannerScreen(
-                    onSettings = { navController.navigate("settings") }
+                    onSettings = { navController.navigate("settings") },
+                    onHeatmap = { navController.navigate("heatmap") }
                 )
             }
             composable(route = Tab.LanDiscovery.route) {
@@ -147,6 +149,11 @@ fun AppNavigation() {
             }
             composable(route = "integrations_config") {
                 IntegrationsScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(route = "heatmap") {
+                HeatmapScreen(
                     onBack = { navController.popBackStack() }
                 )
             }

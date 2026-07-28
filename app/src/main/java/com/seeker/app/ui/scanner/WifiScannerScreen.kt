@@ -22,6 +22,7 @@ import androidx.compose.material.icons.filled.NetworkCheck
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Security
 import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.SignalCellularAlt
 import androidx.compose.material.icons.filled.SettingsEthernet
 import androidx.compose.material.icons.filled.Sort
 import androidx.compose.material.icons.filled.Wifi
@@ -61,6 +62,7 @@ import com.seeker.app.ui.theme.SignalColors
 @Composable
 fun WifiScannerScreen(
     onSettings: () -> Unit = {},
+    onHeatmap: () -> Unit = {},
     viewModel: WifiScannerViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -74,6 +76,9 @@ fun WifiScannerScreen(
             actions = {
                 IconButton(onClick = { viewModel.refresh() }) {
                     Icon(Icons.Default.Refresh, contentDescription = "Aggiorna")
+                }
+                IconButton(onClick = onHeatmap) {
+                    Icon(Icons.Default.SignalCellularAlt, contentDescription = "Heatmap")
                 }
                 IconButton(onClick = onSettings) {
                     Icon(Icons.Default.Settings, contentDescription = "Impostazioni")
